@@ -7,9 +7,10 @@ const mongoose=require('mongoose')
 const productRoutes = require('./Api/routes/products');
 const ordersRoutes = require('./Api/routes/orders');
 
-mongoose.connect("mongodb+srv://Ayush_Bharsakle:"+process.env.MONGO_ATLAS_PW+"@cluster0.azu9l.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",{
-    useMongoCLient:true,
-})
+// Database Inactive now!!!!
+// mongoose.connect("mongodb+srv://Ayush_Bharsakle:"+process.env.MONGO_ATLAS_PW+"@cluster0.azu9l.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",{
+//     useMongoCLient:true,
+// })
 
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({ extended: false }));
